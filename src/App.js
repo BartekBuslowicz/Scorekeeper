@@ -32,22 +32,13 @@ class App extends Component {
     })
   }
 
-  onPlayerRemove = playerIndex => {
-    this.setState({
-      players: this.state.players.map((player, index) => {
-        if (index === playerIndex) {
-          return this.state.players.filter( player => index !== playerIndex);
-        }
-        return player;
-      })
-    })
+  onPlayerRemove = (name) => {
+      this.setState({
+        players: this.state.players.filter((player) => (player.name !== name))
+      });
+    }
 
 
-    // this.setState({
-    //   players: this.state.players.filter( player => 1 !== playerIndex)
-    // })
-    // console.log(this.state.players)
-  }
 
  render() {
    return (

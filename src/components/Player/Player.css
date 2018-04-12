@@ -1,0 +1,15 @@
+* {
+	background-color: #F5F2F0;
+}
+.button {
+	border: 1px solid black;
+	margin: 0 5px;
+	float: right;
+	border-radius: 5px;
+	background-color: grey;
+	color: white;
+	padding: 5px ;
+}
+.Player__score {
+
+}
